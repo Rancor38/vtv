@@ -1,56 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
-
 body {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: #ffffff;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #C0C0C0;
+    background-image: url("data:image/gif;base64,R0lGODlhAgACAIAAAP///8zMzCH5BAAAAAAALAAAAAACAAIAAAIChFEAOw==");
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+}
+
+table {
+    border-style: ridge;
+    border-color: #808080;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #000000;
+    background-image: linear-gradient(to right, #808080, #000000, #808080);
+}
+
+font {
+    display: inline;
+}
+
+center {
+    display: block;
     text-align: center;
-    padding: 80px 20px;
-    min-height: 100vh;
-    margin: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 60px 40px;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+/* Blinking text animation for browsers that support it */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', 'Georgia', serif;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+blink {
+    animation: blink 1s linear infinite;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: none;
+/* Fake 3D border effect */
+td {
+    border-style: inset;
+    border-width: 2px;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    font-weight: 400;
-    color: #e0e0e0;
-    text-shadow: none;
+/* Links should be blue and purple */
+a:link {
+    color: #0000FF;
+    text-decoration: underline;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-top: 25px;
-    font-weight: 300;
-    color: #f0f0f0;
-    text-shadow: none;
+a:visited {
+    color: #800080;
+    text-decoration: underline;
 }
 
-strong {
-    font-weight: 600;
-    color: #ffd700;
+a:hover {
+    color: #FF0000;
+}
+
+/* Scrollbar styling for that Windows 3.1 feel */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: #C0C0C0;
+    border: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #808080;
+    border: 2px outset #C0C0C0;
 }
