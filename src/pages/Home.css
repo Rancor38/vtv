@@ -1,0 +1,34 @@
+.home-container {
+  background-color: #C0C0C0;
+  min-height: 100vh;
+  font-family: 'Times New Roman', serif;
+}
+
+.home-container a {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+.home-container a:visited {
+  color: #800080;
+}
+
+.home-container a:hover {
+  color: #FF0000;
+}
+
+.home-container table {
+  border-collapse: collapse;
+}
+
+.home-container hr {
+  border: none;
+  border-top: 2px solid #808080;
+  margin: 5px 0;
+}
+
+marquee {
+  background-color: #FFFFCC;
+  padding: 5px;
+  border: 1px solid #000000;
+}
