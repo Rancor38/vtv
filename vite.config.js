@@ -2,12 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/vtv/',
+  base: './',
   plugins: [react()],
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true,
-    sourcemap: false
+    outDir: 'docs'
   }
 })
