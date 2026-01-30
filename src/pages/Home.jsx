@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import shardtechLogo from '../assets/shardtech.png'
 import './Home.css'
 
@@ -137,7 +138,7 @@ function Home() {
               </font>
               <hr />
               <font face="Arial" size="2">
-                <a href="/invite">• Special Events</a><br />
+                <Link to="/invite">• Special Events</Link><br />
                 <a href="#">• Careers</a><br />
                 <a href="#">• Investors</a><br />
                 <a href="#">• Partners</a><br />
